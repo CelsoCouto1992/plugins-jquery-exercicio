@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Motors</title>
-
-    <link rel="stylesheet" href="./lib/slick/slick.css">
-    <link rel="stylesheet" href="./lib/slick/slick-theme.css">
     <link rel="stylesheet" href="./main.css">
+
+    <!-- CSS do Slick via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
     <header>
@@ -17,21 +18,14 @@
     </header>
 
     <div class="carousel-imagens">
-        <img src="./images/slide1.jpg" alt="Carro esportivo">
-        <img src="./images/slide2.jpg" alt="Carro de luxo">
-        <img src="./images/slide3.jpg" alt="Carro premium">
+        <img src="./assets/slide1.png" alt="Slide 1">
+        <img src="./assets/slide2.png" alt="Slide 2">
+        <img src="./assets/slide3.png" alt="Slide 3">
     </div>
-
-    <section class="sobre-loja container">
-        <h2>Sobre a loja</h2>
-        <p>
-            Bem-vindo à EBAC Motors. Trabalhamos com veículos de alta qualidade,
-            oferecendo conforto, segurança e tecnologia para nossos clientes.
-        </p>
-    </section>
 
     <section class="container">
         <h2>Formulário de compra</h2>
+
         <form id="form-compra">
             <div class="form-campo">
                 <label for="nome">Nome completo</label>
@@ -63,14 +57,20 @@
                 <input type="text" id="cep" name="cep">
             </div>
 
-            <button type="submit">Enviar pedido</button>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <script src="./lib/jquery/jquery-3.7.1.min.js"></script>
-    <script src="./lib/jquery.mask/jquery.mask.min.js"></script>
-    <script src="./lib/jquery.validate/jquery.validate.min.js"></script>
-    <script src="./lib/slick/slick.min.js"></script>
+    <!-- jQuery via CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Seus plugins locais -->
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
