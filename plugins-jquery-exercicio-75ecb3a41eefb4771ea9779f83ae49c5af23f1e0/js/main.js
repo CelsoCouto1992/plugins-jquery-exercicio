@@ -55,12 +55,12 @@ $(document).ready(function () {
                 required: 'Por favor, informe seu CEP'
             }
         },
-        submitHandler: function (form) {
-            alert('Sua solicitação foi enviada com sucesso!');
+        submitHandler: function(form) {
+            alert('Formulário enviado com sucesso!');
             form.reset();
         },
-        invalidHandler: function () {
-            alert('Por favor, preencha corretamente os campos do formulário.');
+        invalidHandler: function() {
+            alert('Por favor, preencha os campos corretamente.');
         }
     });
 });
